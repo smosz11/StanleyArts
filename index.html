@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "FCol4xnIvBcLQryLZ",
+        });
+      })();
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -68,6 +80,17 @@
         }
       }
     </style>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "FCol4xnIvBcLQryLZ",
+        });
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -86,6 +109,10 @@
         <p class="phone-number">
           Call Us: <a href="tel:+1234567890">+256 705498743 </a>
         </p>
+      </div>
+      <nav>
+        <ul></ul>
+      </nav>
     </header>
 
     <section id="home">
@@ -284,7 +311,44 @@
         Email: <a href="mailto:info@stanleyarts.com">info@stanleyarts.com</a>
       </p>
     </section>
+    <div class="chat-support">
+      <div class="chat-header">
+        <h3>Chat Support</h3>
+      </div>
+      <div class="chat-form">
+        <form id="supportForm">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
 
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
     <footer>
       <p>&copy; 2025 Stanley Arts. All rights reserved.</p>
       <p>
@@ -298,7 +362,5 @@
       </p>
       <p>Contact 0752811909 for website development at only sh.10,000</p>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
