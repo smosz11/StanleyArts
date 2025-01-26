@@ -21,76 +21,61 @@
     <style>
       /* Gallery Section Styles */
       #gallery {
-        background-color: #f0f0f0; /* Light gray background */
-        padding: 40px 20px; /* Add some padding for better spacing */
+        background-color: #f0f0f0;
+        padding: 40px 20px;
       }
 
       #gallery h2 {
-        color: #333; /* Dark gray color for headings */
-        text-align: center; /* Center align headings */
-        margin-bottom: 20px; /* Add some margin for better spacing */
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
       }
 
       .gallery-container {
-        display: grid; /* Use grid for layout */
-        grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-        gap: 10px; /* Add space between grid items */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
       }
 
       .last-three-gallery {
-        display: grid; /* Use grid for layout */
-        grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
-        gap: 10px; /* Add space between grid items */
-        margin-top: 20px; /* Add margin to separate from the top images */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
       }
 
       .gallery-item {
-        border-radius: 5px; /* Optional: add border radius */
-        overflow: hidden; /* Clip overflow for a cleaner look */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for depth */
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
 
       .gallery-item img {
-        width: 100%; /* Set images to fill their parent's width */
-        height: auto; /* Maintain aspect ratio */
-        object-fit: cover; /* Fill the container, maintaining aspect ratio */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
 
       .gallery-item p {
-        font-size: 16px; /* Adjust the font size for item titles */
-        text-align: center; /* Center align text */
-        padding: 10px; /* Add padding for better spacing */
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
       }
 
-      /* Media Queries for Responsiveness */
       @media (max-width: 768px) {
         .gallery-container,
         .last-three-gallery {
-          grid-template-columns: repeat(
-            2,
-            1fr
-          ); /* Two items per row for tablets */
+          grid-template-columns: repeat(2, 1fr);
         }
       }
 
       @media (max-width: 480px) {
         .gallery-container,
         .last-three-gallery {
-          grid-template-columns: 1fr; /* One item per row on small screens */
+          grid-template-columns: 1fr;
         }
       }
     </style>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "FCol4xnIvBcLQryLZ",
-        });
-      })();
-    </script>
   </head>
   <body>
     <header>
@@ -125,7 +110,6 @@
     <section id="gallery">
       <h2>Art Gallery</h2>
       <div class="gallery-container">
-        <!-- 9 Gallery Items -->
         <div class="gallery-item">
           <img
             src="gallery/Screen Shot 2025-01-22 at 3.16.07 PM.png"
@@ -190,8 +174,6 @@
           <p>Artwork Title 9</p>
         </div>
       </div>
-
-      <!-- Last three images fixed at the bottom -->
       <div class="last-three-gallery">
         <div class="gallery-item">
           <img
@@ -243,7 +225,6 @@
       </table>
     </section>
 
-    <!-- Video Section -->
     <section id="video">
       <h2>Video Gallery</h2>
       <div class="video-container">
@@ -311,43 +292,44 @@
         Email: <a href="mailto:info@stanleyarts.com">info@stanleyarts.com</a>
       </p>
     </section>
-    <div class="chat-support">
-      <div class="chat-header">
-        <h3>Chat Support</h3>
-      </div>
-      <div class="chat-form">
-        <form id="supportForm">
-          <label for="name">Name:</label>
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
           <input
             type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
+            id="fullName"
+            name="fullName"
+            placeholder="Your full name"
             required
           />
-
-          <label for="email">Email:</label>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your email address"
             required
           />
-
-          <label for="message">Message:</label>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
-            rows="5"
+            placeholder="Your message"
             required
           ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-      </div>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="statusMessage"></div>
     </div>
+
     <script src="script.js"></script>
     <footer>
       <p>&copy; 2025 Stanley Arts. All rights reserved.</p>
@@ -364,3 +346,4 @@
     </footer>
   </body>
 </html>
+
