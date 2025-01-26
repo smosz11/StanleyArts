@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "FCol4xnIvBcLQryLZ",
+        });
+      })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stanley Arts</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Gallery Section Styles */
+      #gallery {
+        background-color: #f0f0f0;
+        padding: 40px 20px;
+      }
+
+      #gallery h2 {
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .last-three-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .gallery-item {
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .gallery-item p {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .gallery-container,
+        .last-three-gallery {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gallery-container,
+        .last-three-gallery {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img
+          src="gallery/Screen Shot 2025-01-22 at 3.21.39 PM.png"
+          alt="Stanley Arts Logo"
+          class="logo"
+        />
+        <div class="logo-text">
+          <h1>Stanley Arts</h1>
+          <p>Imagination To Reality</p>
+        </div>
+      </div>
+      <div class="contact-info">
+        <p class="phone-number">
+          Call Us: <a href="tel:+1234567890">+256 705498743 </a>
+        </p>
+      </div>
+      <nav>
+        <ul></ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="hero">
+        <h2>Welcome to Stanley Arts</h2>
+        <p>Your destination for stunning art and creativity.</p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Art Gallery</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.16.07 PM.png"
+            alt="Art 1"
+          />
+          <p>Artwork Title 1</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.16.46 PM.png"
+            alt="Art 2"
+          />
+          <p>Artwork Title 2</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.17.28 PM.png"
+            alt="Art 3"
+          />
+          <p>Artwork Title 3</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.18.05 PM.png"
+            alt="Art 4"
+          />
+          <p>Artwork Title 4</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.18.35 PM.png"
+            alt="Art 5"
+          />
+          <p>Artwork Title 5</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.19.05 PM.png"
+            alt="Art 6"
+          />
+          <p>Artwork Title 6</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.20.21 PM.png"
+            alt="Art 7"
+          />
+          <p>Artwork Title 7</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.20.39 PM.png"
+            alt="Art 8"
+          />
+          <p>Artwork Title 8</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-22 at 3.21.08 PM.png"
+            alt="Art 9"
+          />
+          <p>Artwork Title 9</p>
+        </div>
+      </div>
+      <div class="last-three-gallery">
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-23 at 2.45.37 PM.png"
+            alt="Art 10"
+          />
+          <p>Artwork Title 10</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-23 at 2.46.18 PM.png"
+            alt="Art 11"
+          />
+          <p>Artwork Title 11</p>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="gallery/Screen Shot 2025-01-23 at 2.46.09 PM.png"
+            alt="Art 12"
+          />
+          <p>Artwork Title 12</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices">
+      <h2>Our Pricing</h2>
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price (UGX)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A1</td>
+            <td>sh. 300,000</td>
+          </tr>
+          <tr>
+            <td>A2</td>
+            <td>sh. 200,000</td>
+          </tr>
+          <tr>
+            <td>A3</td>
+            <td>sh. 150,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="video">
+      <h2>Video Gallery</h2>
+      <div class="video-container">
+        <div class="video-item">
+          <p>Video Title 1</p>
+          <video controls>
+            <source src="gallery/Download(1).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Video Title 2</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="gallery/Download(2).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Video Title 3</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="gallery/Download(3).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Video Title 4</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="gallery/Download(4).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Video Title 5</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="gallery/Download(5).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p>Video Title 6</p>
+        </div>
+        <div class="video-item">
+          <video controls>
+            <source src="gallery/Download(7).mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Stanley Arts</h2>
+      <p>
+        Stanley Arts is a platform that celebrates artistic expression in all
+        its forms. From painting to digital art, we feature works from artists
+        all around the world.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>
+        If you're an artist and would like to showcase your work, or if you have
+        any questions, please feel free to reach out to us!
+      </p>
+      <p>
+        Email: <a href="mailto:info@stanleyarts.com">info@stanleyarts.com</a>
+      </p>
+    </section>
+
+    <div class="contact-container">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+      <div id="statusMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 Stanley Arts. All rights reserved.</p>
+      <p>
+        Click TikTok To follow For More Info:
+        <a
+          href="https://www.tiktok.com/@nyolastanley?is_from_webapp=1&sender_device=pc"
+          target="_blank"
+          class="tiktok-link"
+          >TikTok</a
+        >
+      </p>
+      <p>Contact 0752811909 for website development at only sh.10,000</p>
+    </footer>
+  </body>
+</html>
